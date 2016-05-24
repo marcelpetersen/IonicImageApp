@@ -33,5 +33,5 @@ imageApp.config(function($stateProvider, $urlRouterProvider) {
       templateUrl: "templates/secure.html",
       controller: "SecureController"
     });
-    $urlRouterProvider("/firebase");
+    $urlRouterProvider.otherwise('/firebase');
 });

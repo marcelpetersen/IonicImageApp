@@ -1,4 +1,4 @@
-imageApp.controller("SecureController", function($scope, $ionicHistory, $firebaseArray, $cordovaCamera)) {
+imageApp.controller("SecureController", function($scope, $ionicHistory, $firebaseArray, $cordovaCamera){
 	$ionicHistory.clearHistory();
 
 	$scope.images = [];
@@ -19,7 +19,7 @@ imageApp.controller("SecureController", function($scope, $ionicHistory, $firebas
 			destinationType : Camera.DestinationType.DATA_URL,
 			sourceType : Camera.PictureSourceType.CAMERA,
 			allowEdit : true,
-			encodingType: Camera.EncondingType.JPEG,
+			encodingType: Camera.EncodingType.JPEG,
 			popoverOptions: CameraPopoverOptions,
 			targetWidth: 500,
 			targetHeight: 500,

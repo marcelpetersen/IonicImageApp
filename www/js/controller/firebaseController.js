@@ -8,7 +8,7 @@ imageApp.controller("FirebaseController", function($scope, $state, $firebaseAuth
 		}).then(function(authData){
 			$state.go("secure");
 		}).catch(function(error){
-			controle.error("Error: " + error);
+			console.error("Error: " + error);
 		});
 	}
 
@@ -23,8 +23,8 @@ imageApp.controller("FirebaseController", function($scope, $state, $firebaseAuth
 			});
 		}).then(function (userData){
 			$state.go("secure");
-		}).catch(function(e){
-			controle.error("Error: "+ e);
+		}).catch(function(error){
+			console.error("Error: "+ error);
 		});
 	}
 });
